@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Scale Type Explorer</string>
+    <string name="reset">Reset</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+    <string-array name="pref_scale_types">
+        <item>MATRIX</item>
+        <item>FIT_XY</item>
+        <item>FIT_START</item>
+        <item>FIT_CENTER</item>
+        <item>FIT_END</item>
+        <item>CENTER</item>
+        <item>CENTER_CROP</item>
+        <item>CENTER_INSIDE</item>
+    </string-array>
+
+    <string name="scale_type_image">Scale type image</string>
+</resources>

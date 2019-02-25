@@ -1,0 +1,35 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- If keys or defaults change here, make sure they also change in SettingsActivity. -->
+    <ListPreference
+        android:defaultValue="MATRIX"
+        android:entries="@array/pref_scale_types"
+        android:entryValues="@array/pref_scale_types"
+        android:icon="@drawable/ic_scale_black_24dp"
+        android:key="pref_scale_type"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="ImageView.ScaleType" />
+
+    <PreferenceCategory android:title="Percentages for Matrix Scale Type">
+        <EditTextPreference
+            android:defaultValue="20"
+            android:icon="@drawable/ic_scale_width_black_24dp"
+            android:inputType="numberDecimal"
+            android:key="pref_width_percentage"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Width percentage (0.0-100.0)" />
+
+        <EditTextPreference
+            android:defaultValue="20"
+            android:icon="@drawable/ic_scale_height_black_24dp"
+            android:inputType="numberDecimal"
+            android:key="pref_height_percentage"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Height percentage (0.0-100.0)" />
+    </PreferenceCategory>
+</PreferenceScreen>
